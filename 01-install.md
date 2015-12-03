@@ -39,7 +39,7 @@ Did you install Python 2 or 3? Why? How can you check the version of Python inst
 
 I installed Python 2 because that is what I have learned and what the bootcamp teaches. 
 
-'python --version' in terminal
+`python --version` in terminal
 
 ---
 
