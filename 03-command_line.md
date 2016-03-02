@@ -46,6 +46,7 @@ What does `xargs` do? Give an example of how to use it.
 ---
 
 `xargs` executes commands over a given input. For example, you could pass the output of `find` to `xargs` and perform some action on the found files.
+
     find . -name "*.txt" | xargs rm 
     find . -name "*.txt" | xargs grep "hello"
 * Use -print0 and -0 options to find and run commands on files with whitespace in name
