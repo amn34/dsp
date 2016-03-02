@@ -68,6 +68,8 @@ Some shortcuts:
 * ctrl+space for autocomplete
 * ctrl+slash to comment
 
-Pycharm is customizable via a configuration page on the welcome screen. I chose the Emacs keyboard, to always show line numbers, and to use the github format.
+PyCharm is customizable via a configuration page on the welcome screen. I chose the Emacs keyboard, to always show line numbers, and to use the github format.
+
+Edit: actually, PyCharm is really heavy for my current setup (Chromebook running Ubuntu) so I've been using Emacs as an IDE.
 
 ---
