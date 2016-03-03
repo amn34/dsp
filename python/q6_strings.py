@@ -18,7 +18,10 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if 0 <= count <= 9:
+        print 'Number of donuts:', count
+    else:
+        print 'Number of donuts: many'
 
 
 def both_ends(s):
@@ -37,7 +40,10 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    if len(s) < 2:
+        print ''
+    else:
+        print s[0:2] + s[-2:]
 
 
 def fix_start(s):
@@ -56,7 +62,8 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    word = ''.join(letter if letter != s[0] else '*' for letter in s[1:])
+    print s[0] + word
 
 
 def mix_up(a, b):
@@ -74,7 +81,8 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+
+    print b[0:2] + a[2:], a[0:2] + b[2:]
 
 
 def verbing(s):
@@ -91,7 +99,13 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+
+    if len(s) < 3:
+        print s
+    elif s.endswith('ing'):
+        print s + 'ly'
+    else:
+        print s + 'ing'
 
 
 def not_bad(s):
@@ -111,7 +125,12 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    notpos = s.find('not')
+    badpos = s.find('bad')
+    if notpos >= 0 and badpos > notpos:
+        print s[:notpos] + 'good' + s[badpos + 3:]
+    else:
+        print s
 
 
 def front_back(a, b):
@@ -130,4 +149,13 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+
+    indexa = len(a) / 2 + (len(a) % 2 > 0)
+    indexb = len(b) / 2 + (len(b) % 2 > 0)
+
+    afront = a[:indexa]
+    aback = a[indexa:]
+    bfront = b[:indexb]
+    bback = b[indexb:]
+
+    print afront + bfront + aback + bback
