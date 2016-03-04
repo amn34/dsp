@@ -1,4 +1,4 @@
-import csv
+emaillist = find_emails(faclist)
 
 
 def csv_writer(data, path):
