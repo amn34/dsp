@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
-Lists are dynamic/mutable whereas tuples are not. Therefore they do not have append, extend, remove, or pop methods. Tuples can be used as keys in dictionaries where lists cannot (assuming the tuple only has immutable elements, i.e. does not contain a list) because dictionary keys must be immutable. If a list were a key and the list was modified (thus modifying the hash value), this would create a problem in the dictionary look up.
+**Lists are dynamic/mutable whereas tuples are not. Therefore they do not have append, extend, remove, or pop methods. Tuples can be used as keys in dictionaries where lists cannot (assuming the tuple only has immutable elements, i.e. does not contain a list) because dictionary keys must be immutable. If a list were a key and the list was modified (thus modifying the hash value), this would create a problem in the dictionary look up.**
 
 ---
 
@@ -20,7 +20,7 @@ Lists are dynamic/mutable whereas tuples are not. Therefore they do not have app
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
-Unlike lists, sets are unordered, must contain unique values and cannot store unhashable types (lists, sets, dictionaries). Sets support mathematical operations (union, intersection, difference). Both are mutable and support comprehensions.
+**Unlike lists, sets are unordered, must contain unique values and cannot store unhashable types (lists, sets, dictionaries). Sets support mathematical operations (union, intersection, difference). Both are mutable and support comprehensions.**
 
     #create list
     items = [1,1,2,3,3,3,4,4,5]
@@ -30,7 +30,7 @@ Unlike lists, sets are unordered, must contain unique values and cannot store un
     #creates set that is equal to numbers
     things = {1,1,2,3,3,3,4,4,5}
     
-For testing whether an item is in an object, sets are much faster than lists because each item in a set is placed in membory using its hash. Therefore looking for an item only looks in the hash position to see if it is there. It does not matter how large the set is. Searching in a list means looking at each item, so the longer the list, the longer it will take.    
+**For testing whether an item is in an object, sets are much faster than lists because each item in a set is placed in membory using its hash. Therefore looking for an item only looks in the hash position to see if it is there. It does not matter how large the set is. Searching in a list means looking at each item, so the longer the list, the longer it will take.**
 
 ---
 
@@ -38,7 +38,7 @@ For testing whether an item is in an object, sets are much faster than lists bec
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
-`lamda` defines an anonymous function in place. This is useful for simple functions that only need to be used once. Its result is the returned value from the (single) expression that it contains.
+**`lamda` defines an anonymous function in place. This is useful for simple functions that only need to be used once. Its result is the returned value from the (single) expression that it contains.**
 
     #returns 4
     (lambda x: x**2)(2)
@@ -53,7 +53,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
-List comprehension is a way to define and create new lists by applying a function to all elements of an original list.
+**List comprehension is a way to define and create new lists by applying a function to all elements of an original list.**
 
      #create list of squares 
      numbers = [1, 4, 8]
@@ -70,7 +70,7 @@ List comprehension is a way to define and create new lists by applying a functio
 
      evens = filter(lambda n: n%2 == 0, numbers)
 
-List comprehension is a complete substitute for `map` and `filter` and there is no real speed difference. Set and dictionary comprehension uses the same syntax.
+**List comprehension is a complete substitute for `map` and `filter` and there is no real speed difference. Set and dictionary comprehension uses the same syntax.**
 
      #create set of evens
      numbers = [5, 8, 10, 15]
