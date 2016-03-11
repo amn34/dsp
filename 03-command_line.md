@@ -31,7 +31,7 @@ What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations 
 
 ---
 
-`ls` lists contents in the currect directory. 
+**`ls` lists contents in the currect directory. **
 
 The -a flag lists all files, including hidden ones.
 The -l flag gives the long format including the file type, permissions, owner, size, mod date, etc.
@@ -45,8 +45,9 @@ What does `xargs` do? Give an example of how to use it.
 
 ---
 
-`xargs` executes commands over a given input. For example, you could pass the output of `find` to `xargs` and perform some action on the found files.
+**`xargs` executes commands over a given input. For example, you could pass the output of `find` to `xargs` and perform some action on the found files.**
 
-    find . -name "*.txt" | xargs rm 
-    find . -name "*.txt" | xargs grep "hello"
+    find . -name "*.txt" | xargs rm   #removes found files
+    find . -name "*.txt" | xargs grep "hello" #looks for string 'hello' in found files
+    
 * Use -print0 and -0 options to find and run commands on files with whitespace in name
