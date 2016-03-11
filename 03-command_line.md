@@ -31,7 +31,7 @@ What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations 
 
 ---
 
-**`ls` lists contents in the currect directory. **
+**`ls` lists contents in the currect directory.**
 
 The -a flag lists all files, including hidden ones.
 The -l flag gives the long format including the file type, permissions, owner, size, mod date, etc.
