@@ -31,7 +31,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
-I googled around a bit and Emacs was suggested as a sort of compromise between the super-simple nano and the complex but customizable vim.
+*I googled around a bit and Emacs was suggested as a sort of compromise between the super-simple nano and the complex but customizable vim.*
 
 ---
 
@@ -61,7 +61,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
-I will use PyCharm. In comparisons of editors, it was consistently lauded as complete and easy to use. Two popular features are the ability to open projects in separate windows and the coding autocomplete.
+*I will use PyCharm. In comparisons of editors, it was consistently lauded as complete and easy to use. Two popular features are the ability to open projects in separate windows and the coding autocomplete.
 
 Some shortcuts:
 * double-shift to search
@@ -70,6 +70,6 @@ Some shortcuts:
 
 PyCharm is customizable via a configuration page on the welcome screen. I chose the Emacs keyboard, to always show line numbers, and to use the github format.
 
-Edit: actually, PyCharm is really heavy for my current setup (Chromebook running Ubuntu) so I've been using Emacs as an IDE.
+Edit: actually, PyCharm is really heavy for my current setup (Chromebook running Ubuntu) so I've been using Emacs as an IDE.*
 
 ---
