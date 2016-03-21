@@ -29,12 +29,12 @@
         thinkplot.Show(xlabel = 'estimated lam', ylabel = 'CDF')  
 
 | lam = 2 | lam = 5 | lam = 10
----|---*|---*|---*
+---|---:|---:|---:
 std err | 1.40 | 2.24 | 3.13
 mean err | 0.04 | 0.11 | 0.05
 CI | (0, 4) | (2, 8) | (6, 14)
 
-![lamcdf](/images/lamcdf.png)
+![lamcdf](/img/lamcdf.png)
 
 Sampling error increases for increasing values of lam. Intuitively this makes sense, as the greater the space for goal-scoring, the more variability there will be. However, given a small and consistent mean error, this estimator seems unbiased.
 
