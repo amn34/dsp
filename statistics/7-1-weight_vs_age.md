@@ -10,7 +10,7 @@
     thinkplot.Scatter(age, weight)
     thinkplot.Show(xlabel = 'mother age in years', ylabel = 'birth weight in lbs')
 
-![ageweightscatter](/images/ageweightscatter.png)
+![ageweightscatter](/img/ageweightscatter.png)
 
 
     bins = np.arange(15, 50, 3)
@@ -24,7 +24,7 @@
         weights = [cdf.Percentile(percent) for cdf in cdfs]
         thinkplot.Plot(ages, weights)
 
-![ageweightpercentiles](/images/ageweightpercentiles.png)
+![ageweightpercentiles](/img/ageweightpercentile.png)
 
     thinkstats2.Corr(age, weight)
     thinkstats2.SpearmanCorr(age, weight)
