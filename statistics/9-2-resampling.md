@@ -25,11 +25,11 @@
     p = test.PValue(iters=1000)
 
 |preg length | chi-squared | birth weight | weight v age 
----|---*|---*|---*|---*
+---|---:|---:|---:|---:
 n = 100 |0.58|0.15|0.0|0.0
 n = 1000 |0.60|0.14|0.0|0.0
 n = 10000 |0.60|0.14|0.0|0.0
 
 Theoretically, p-values should fall as n increases, all else equal. Hypothesis tests become more sensitive with larger sample sizes; you should be more likely to correctly reject a false null hypothesis. Unfortunately my replication of the tests on various sample sizes yielded stable p-values. In cases where large p-values remained large, perhaps the tests are low-powered because the effect size is quite small. p = 0.0 persists from n = 100 to n = 10000, as expected.
 
-#Just wanted to say that I found this chapter really weird. There's no discussion of CLT and good sampling practice, so instead it talks about "reshuffling" data to simulate it (in the birth weights example). Then the dice rolling example has n = 60. I don't really understand why there's no discussion of creating a normal distribution through random sampling...
+Just wanted to say that I found this chapter really weird. There's no discussion of CLT and good sampling practice, so instead it talks about "reshuffling" data to simulate it (in the birth weights example). I mean, I think that's a strange way to conceptualize sampling?
