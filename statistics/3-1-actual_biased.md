@@ -30,6 +30,6 @@ Biased PMF:
     thinkplot.Pmfs([pmf, bias])
     thinkplot.Show()
 
-![pmfs](http://github.com/amn34/images/biaspmf.png)
+![pmfs](https://github.com/amn34/dsp/blob/master/img/biaspmf.png)
 
 Self-reported observed family sizes will be biased toward a larger family mean because more family members in larger families in the sample observe larger family sizes. For each five-membered family, five respondents will observe five-membered families, while for each two-membered family, only two respondents will report a two-membered family.
